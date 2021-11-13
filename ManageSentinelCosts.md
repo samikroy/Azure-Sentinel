@@ -1,14 +1,3 @@
----
-title: Get Smart With Data Ingestion & Data Retension in Microsoft Sentinel
-description: We will be talking about various strategies on data ingestion & retention to Microsoft Sentinel.
-Demonstrate the tweaks for cost efficiency.
-services: sentinel
-author: samikroy
-ms.service: azure-sentinel
-ms.custom: subject-cost-optimization, ignite-fall-2021
-ms.topic: how-to
-ms.date: 11/13/2021
----
 
 # Get Smart With Data Ingestion & Data Retension in Microsoft Sentinel
 
@@ -73,7 +62,6 @@ To see your Azure bill, select **Cost Analysis** in the left navigation of **Cos
 > [!NOTE]
 > The costs shown in this image are for example purposes only. They're not intended to reflect actual costs.
 
-![Screenshot showing the Microsoft Sentinel section of a sample Azure bill.](media/billing/sample-bill.png)
 
 Microsoft Sentinel and Log Analytics charges appear on your Azure bill as separate line items based on your selected pricing plan. If you exceed your workspace's Commitment Tier usage in a given month, the Azure bill shows one line item for the Commitment Tier with its associated fixed cost, and a separate line item for the ingestion beyond the Commitment Tier, billed at your same Commitment Tier rate.
 
@@ -158,24 +146,12 @@ The following table lists the free data sources you can enable in Microsoft Sent
 | **Microsoft Defender for IoT**          | SecurityAlert (Defender for IoT)     | Free             |
 | **Microsoft 365 Defender**          | SecurityIncident | Free|
 ||SecurityAlert| Free|
-||DeviceEvents                    | Paid|
-||DeviceFileEvents                | Paid|
-||DeviceImageLoadEvents           | Paid|
-||DeviceInfo                      | Paid|
-||DeviceLogonEvents               | Paid|
-||DeviceNetworkEvents             | Paid|
-||DeviceNetworkInfo               | Paid|
-||DeviceProcessEvents             | Paid|
-||DeviceRegistryEvents            | Paid|
-||DeviceFileCertificateInfo       | Paid|
 | **Microsoft Defender for Endpoint** | SecurityAlert (MDATP)          | Free             |
 | **Microsoft Defender for Identity** | SecurityAlert (AATP)           | Free             |
 | **Microsoft Defender for Cloud Apps**   | SecurityAlert (Defender for Cloud Apps)           | Free             |
-||MCASShadowITReporting           | Paid|
 
 For data connectors that include both free and paid data types, you can select which data types you want to enable.
 
-![Screenshot showing the Data connector page for Defender for Cloud Apps, with the free Security Alerts selected and the paid MCASShadowITReporting not selected.](media/billing/data-types.png)
 
 For more information about free and paid data sources and connectors, see [Connect data sources](connect-data-sources.md).
 
@@ -292,7 +268,6 @@ In Log Analytics, you can enable a daily volume cap that limits the daily ingest
 
 To define a daily volume cap, select **Usage and estimated costs** in the left navigation of your Log Analytics workspace, and then select **Daily cap**. Select **On**, enter a daily volume cap amount, and then select **OK**.
 
-![Screenshot showing the Usage and estimated costs screen and the Daily cap window.](media/billing/daily-cap.png)
 
 The **Usage and estimated costs** screen also shows your ingested data volume trend in the past 31 days, and the total retained data volume.
 
@@ -318,8 +293,6 @@ You can increase your Commitment Tier anytime, which restarts the 31-day commitm
 To see your current Microsoft Sentinel pricing tier, select **Settings** in the Microsoft Sentinel left navigation, and then select the **Pricing** tab. Your current pricing tier is marked **Current tier**.
 
 To change your pricing tier commitment, select one of the other tiers on the pricing page, and then select **Apply**. You must have **Contributor** or **Owner** role in Microsoft Sentinel to change the pricing tier.
-
-![Screenshot showing the Pricing page in Microsoft Sentinel Settings, with Pay-As-You-Go indicated as the current pricing tier.](media/billing/pricing.png)
 
 > [!NOTE]
 > Microsoft Sentinel data ingestion volumes appear under **Security Insights** in some portal Usage Charts.
@@ -377,7 +350,6 @@ Besides for the predefined sets of events that you can select to ingest, such as
 > [!NOTE]
 > The costs shown in this image are for example purposes only. They're not intended to reflect actual costs.
 
-![Screenshot showing a Cost Management + Billing Cost analysis screen.](media/billing/cost-management.png)
 
 You could also apply further controls. For example, to view only the costs associated with Microsoft Sentinel, select **Add filter**, select **Service name**, and then select the service names **Sentinel**, **log analytics**, and **azure monitor**.
 
