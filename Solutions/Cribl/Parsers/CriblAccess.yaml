@@ -1,8 +1,8 @@
 id: eb7323cf-8cad-42bd-921b-5e18b907002a
 Function:
   Title: Parser for CriblAccess
-  Version: '1.0.0'
-  LastUpdated: '2024-08-01'
+  Version: '1.0.1'
+  LastUpdated: '2025-07-30'
 Category: Microsoft Sentinel Parser
 FunctionName: CriblAccess
 FunctionAlias: CriblAccess
